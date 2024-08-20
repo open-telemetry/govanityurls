@@ -15,7 +15,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -31,7 +30,7 @@ func main() {
 	default:
 		log.Fatal("usage: govanityurls [CONFIG]")
 	}
-	vanity, err := ioutil.ReadFile(configPath)
+	vanity, err := os.ReadFile(configPath)
 	if err != nil {
 		log.Fatal(err)
 	}

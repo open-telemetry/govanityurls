@@ -16,7 +16,7 @@ package main
 
 import (
 	"bytes"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"sort"
@@ -111,14 +111,14 @@ func TestHandler(t *testing.T) {
 			t.Errorf("%s: http.Get: %v", test.name, err)
 			continue
 		}
-		data, err := ioutil.ReadAll(resp.Body)
+		data, err := io.ReadAll(resp.Body)
 		resp.Body.Close()
 		s.Close()
 		if resp.StatusCode != http.StatusOK {
 			t.Errorf("%s: status code = %s; want 200 OK", test.name, resp.Status)
 		}
 		if err != nil {
-			t.Errorf("%s: ioutil.ReadAll: %v", test.name, err)
+			t.Errorf("%s: os.ReadAll: %v", test.name, err)
 			continue
 		}
 		if got := findMeta(data, "go-import"); got != test.goImport {
@@ -237,10 +237,10 @@ func TestPathConfigSetFind(t *testing.T) {
 			want:  "/y",
 		},
 		{
-			paths: []string{"/example/helloworld", "/", "/y", "/foo"},
-			query: "/x/y/",
-			want:  "/",
-			subpath:  "x/y/",
+			paths:   []string{"/example/helloworld", "/", "/y", "/foo"},
+			query:   "/x/y/",
+			want:    "/",
+			subpath: "x/y/",
 		},
 		{
 			paths: []string{"/example/helloworld", "/y", "/foo"},
