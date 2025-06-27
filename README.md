@@ -149,5 +149,3 @@ paths:
 - [OpenTelemetry Collector Contrib Approvers](https://github.com/open-telemetry/opentelemetry-collector-contrib#approvers)
 - [OpenTelemetry Go Approvers](https://github.com/open-telemetry/opentelemetry-go/blob/main/CONTRIBUTING.md#approvers)
 - [OpenTelemetry Go Instrumentation Approvers](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#approvers)
-
-
