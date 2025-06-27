@@ -135,3 +135,19 @@ paths:
     </tr>
   </tbody>
 </table>
+
+## Maintainers
+
+- [OpenTelemetry Collector Maintainers](https://github.com/open-telemetry/opentelemetry-collector#maintainers)
+- [OpenTelemetry Collector Contrib Maintainers](https://github.com/open-telemetry/opentelemetry-collector-contrib#maintainers)
+- [OpenTelemetry Go Maintainers](https://github.com/open-telemetry/opentelemetry-go/blob/main/CONTRIBUTING.md#maintainers)
+- [OpenTelemetry Go Instrumentation Maintainers](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#maintainers)
+
+## Approvers
+
+- [OpenTelemetry Collector Approvers](https://github.com/open-telemetry/opentelemetry-collector#approvers)
+- [OpenTelemetry Collector Contrib Approvers](https://github.com/open-telemetry/opentelemetry-collector-contrib#approvers)
+- [OpenTelemetry Go Approvers](https://github.com/open-telemetry/opentelemetry-go/blob/main/CONTRIBUTING.md#approvers)
+- [OpenTelemetry Go Instrumentation Approvers](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#approvers)
+
+
