@@ -112,7 +112,7 @@ func TestHandler(t *testing.T) {
 			continue
 		}
 		data, err := io.ReadAll(resp.Body)
-		resp.Body.Close()
+		_ = resp.Body.Close()
 		s.Close()
 		if resp.StatusCode != http.StatusOK {
 			t.Errorf("%s: status code = %s; want 200 OK", test.name, resp.Status)
@@ -306,7 +306,7 @@ func TestCacheHeader(t *testing.T) {
 			t.Errorf("%s: http.Get: %v", test.name, err)
 			continue
 		}
-		resp.Body.Close()
+		_ = resp.Body.Close()
 		got := resp.Header.Get("Cache-Control")
 		if got != test.cacheControl {
 			t.Errorf("%s: Cache-Control header = %q; want %q", test.name, got, test.cacheControl)
