@@ -150,3 +150,5 @@ For more information about the maintainer role, see the [community repository](h
 - [OpenTelemetry Collector Contrib Approvers](https://github.com/open-telemetry/opentelemetry-collector-contrib#approvers)
 - [OpenTelemetry Go Approvers](https://github.com/open-telemetry/opentelemetry-go/blob/main/CONTRIBUTING.md#approvers)
 - [OpenTelemetry Go Instrumentation Approvers](https://github.com/open-telemetry/opentelemetry-go-instrumentation/blob/main/CONTRIBUTING.md#approvers)
+
+For more information about the approver role, see the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#approver).
