@@ -4,12 +4,14 @@ Go Vanity URLs is a simple Go server that allows you
 to set custom import paths for your Go packages.
 It also can run on Google App Engine.
 
+This project is a fork of [govanityurls](https://github.com/GoogleCloudPlatform/govanityurls).
+
 ## Quickstart
 
 Install and run the binary:
 
 ```
-$ go get -u github.com/GoogleCloudPlatform/govanityurls
+$ go get -u github.com/open-telemetry/govanityurls
 $ # update vanity.yaml
 $ govanityurls
 $ # open http://localhost:8080
@@ -28,7 +30,7 @@ Setup a [custom domain](https://cloud.google.com/appengine/docs/standard/python/
 
 Get the application:
 ```
-git clone https://github.com/GoogleCloudPlatform/govanityurls
+git clone https://github.com/open-telemetry/govanityurls
 cd govanityurls
 ```
 

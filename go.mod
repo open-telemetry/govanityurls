@@ -1,4 +1,4 @@
-module github.com/GoogleCloudPlatform/govanityurls
+module github.com/open-telemetry/govanityurls
 
 go 1.22
 
