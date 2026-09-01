@@ -1,4 +1,4 @@
-runtime: go126
+runtime: go127
 
 handlers:
 - url: /.*
